@@ -11,6 +11,7 @@
   --color_Dominante: #396f9b;
   --color_ComplementarioP: #82a6be;
   --color_ComplementarioS: #aebeca;
+  --color_Blanco: #f2f2f2;
 }
 html {
   scroll-behavior: smooth;
@@ -407,7 +408,8 @@ nav {
 }
 .tecnologias h2 {
   grid-area: th2;
-
+  
+  background: var(--color_Blanco);
   color: var(--color_Dominante);
   font-size: 4rem;
   font-family: fuenteTitulo;
@@ -509,6 +511,7 @@ nav {
   align-items: center;
 }
 .inicio > h2 {
+  background: var(--color_Blanco);
   color: var(--color_Dominante);
   font-size: 4rem;
   font-family: fuenteTitulo;
@@ -541,15 +544,15 @@ nav {
 
 /* PROYECTOS */
 .proyectos {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
-  padding: 15px;
 }
 .proyectos > h2 {
+  width: 100%;
+  
+  background: var(--color_Blanco);
   color: var(--color_Dominante);
   font-size: 4rem;
   font-family: fuenteTitulo;
@@ -704,6 +707,9 @@ nav {
   align-items: center;
 }
 .contacto > h2 {
+  width: 100%;
+
+  background: var(--color_Blanco);
   color: var(--color_Dominante);
   font-size: 4rem;
   font-family: fuenteTitulo;
@@ -761,6 +767,8 @@ footer > h3 {
   font-family: fuenteTitulo;
 }
 
+/* ANIMACIONES */
+
 .animadoInicio {
   opacity: 0;
   transition: opacity 2s ease;
@@ -776,7 +784,6 @@ footer > h3 {
     transform: translateY(0);
   }
 }
-
 .animado {
   opacity: 0;
   transition: opacity 2s ease;
@@ -792,7 +799,6 @@ footer > h3 {
     transform: translateX(0);
   }
 }
-
 .animadoDos {
   opacity: 0;
   transition: opacity 2s ease;
